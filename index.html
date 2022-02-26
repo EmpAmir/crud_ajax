@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello, world!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <h1 class="alert-info text-center md-5 p-3">Buy and Sell Order Form</h1>
+        <div class="col-md-7 text-center">
+          <h3 class="alert-primary p-2">Buy Order Details</h3>
+          <form action="" id="myForm">
+            <div class="row">
+              <div class="col">
+                <input type="hidden" id="stuId" />
+                <label for="nameId" class="form-label">Name</label>
+                <input type="text" class="form-control" id="nameId" />
+              </div>
+              <div class="col">
+                <label for="emailId" class="form-label">Email</label>
+                <input
+                  type="email"
+                  value="@gmail.com"
+                  class="form-control"
+                  id="emailId"
+                />
+              </div>
+              <div class="col">
+                <label for="passwordId" class="form-label">Password</label>
+                <input type="password" class="form-control" id="passwordId" />
+              </div>
+              <div class="col mt-3">
+                <button type="submit" class="btn btn-primary" id="btnAdd">
+                  SAVE
+                </button>
+              </div>
+              <div id="msg" class="alert-info text-center mt-2"></div>
+            </div>
+          </form>
+
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scop="col">#</th>
+                <th scop="col">USDT_Rate</th>
+                <th scop="col">USDT_Total</th>
+                <th scop="col">INR_Total</th>
+                <th scop="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <div class="col-md-5 text-center">
+          <h3 class="alert-primary p-2">Sell Order Details</h3>
+          <form action="" id="sellForm">
+            <div class="row">
+              <div class="col">
+                <input type="hidden" id="id" />
+                <label for="inrTotal" class="form-label">INR_Total</label>
+                <input type="text" class="form-control" id="inrTotal" />
+              </div>
+              <div class="col">
+                <label for="utrNo" class="form-label">UTR NO.</label>
+                <input
+                  type="email"
+                  value="@gmail.com"
+                  class="form-control"
+                  id="utrNo"
+                />
+              </div>
+              <div class="col mt-3">
+                <button type="submit" class="btn btn-primary" id="btnSell">
+                  SAVE
+                </button>
+              </div>
+              <div id="msg" class="alert-info text-center mt-2"></div>
+            </div>
+          </form>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scop="col">#</th>
+                <th scop="col">INR_Total</th>
+                <th scop="col">UTR_No.</th>
+                <th scop="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="sbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jqajax.js"></script>
+    <script src="js/sell/jqajax_sell.js"></script>
+  </body>
+</html>
